@@ -4,7 +4,7 @@ import axios from 'axios';
 
 // dotenv.config();
 const API_BASE_URL =import.meta.env.VITE_APP_API_BASE_URL_LIVE;
-console.log(API_BASE_URL);
+// console.log(API_BASE_URL);
 
 export const generateCaptions = async (image:any, vibe:string) => {
   const formData = new FormData();
