@@ -21,11 +21,11 @@ const Navbar = () => {
 
   return (
     <nav className="flex fixed z-10 border-b-2 border-black top-0 left-0 right-0 cursor-pointer sticky items-center justify-between p-4 bg-[#fff] text-black">
-      <div className="flex items-center gap-2">
+      <div onClick={()=>navigate('/')} className="flex items-center gap-2">
         <img className='h-8 w-8' src={logo} alt="ClickWorthy Logo" />
         <span style={{fontFamily:'sans-serif'}} className="text-lg font-semibold">ClickWorthy</span>
       </div>
-
+ 
       <div className="flex items-center cursor-pointer">
         {isLoggedIn ? (
           <>
