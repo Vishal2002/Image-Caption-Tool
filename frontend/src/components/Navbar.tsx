@@ -1,5 +1,5 @@
 // Navbar.jsx
-import React, { useContext } from 'react';
+import  { useContext } from 'react';
 import { Link,useNavigate } from 'react-router-dom';
 import { AuthContext } from '../AuthContext';
 import logo from '../../public/caption.png';
