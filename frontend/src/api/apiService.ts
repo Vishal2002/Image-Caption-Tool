@@ -1,8 +1,10 @@
 import axios from 'axios';
+
 // import dotenv from 'dotenv';
 
 // dotenv.config();
-const API_BASE_URL = 'http://localhost:8080';
+const API_BASE_URL =import.meta.env.VITE_APP_API_BASE_URL_LIVE;
+console.log(API_BASE_URL);
 
 export const generateCaptions = async (image:any, vibe:string) => {
   const formData = new FormData();
